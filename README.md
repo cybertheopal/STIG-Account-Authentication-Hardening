@@ -1,30 +1,30 @@
-# 🔐 Account & Authentication Hardening
+# Account & Authentication Hardening
 
 In this lab, I will perform a compliance scan using Tenable's vulnerability management tool on a Windows 10 Pro virtual machine. The focus of this lab is on Account and Authentication Hardening. I’ll specifically look for settings and configurations related to user accounts, password policies, and authentication mechanisms that do not meet compliance standards. After identifying the non-compliant checks, I will apply the necessary remediations and re-run the scan to ensure the issues have been properly addressed.
 
-# 🌟 Table of Contents 🌟
+# Table of Contents 
 
-- [🧰 **Tools Used**](#tools-used)
-- [1. 🔧 **Configuring Compliance Scan**](#1-configuring-compliance-scan)
-- [2. 📊 **Analysing Scan Results**](#2-analysing-scan-results)
-- [3. 🔒 **Security Control WN10-CC-000280 Overview**](#3-security-control-wn10-cc-000280-overview)
+- [ **Tools Used**](#tools-used)
+- [1.  **Configuring Compliance Scan**](#1-configuring-compliance-scan)
+- [2.  **Analysing Scan Results**](#2-analysing-scan-results)
+- [3.  **Security Control WN10-CC-000280 Overview**](#3-security-control-wn10-cc-000280-overview)
   - [3.1 Remediating WN10-CC-000280](#31-remediating-wn10-cc-000280)
   - [3.2 Confirming WN10-CC-000280 Remediation](#32-confirming-wn10-cc-000280-remediation)
 
-- [4. 🔑 **Security Control WN10-00-000090 Overview**](#4-security-control-wn10-00-000090-overview)
+- [4.  **Security Control WN10-00-000090 Overview**](#4-security-control-wn10-00-000090-overview)
   - [4.1 Remediating WN10-00-000090](#41-remediating-wn10-00-000090)
   - [4.2 Confirming WN10-00-000090 Remediation](#42-confirming-wn10-00-000090-remediation)
 
-- [5. ⚙️ **Security Control WN10-AC-000035 Overview**](#5-security-control-wn10-ac-000035-overview)
+- [5. ⚙ **Security Control WN10-AC-000035 Overview**](#5-security-control-wn10-ac-000035-overview)
   - [5.1 Remediating WN10-AC-000035](#51-remediating-wn10-ac-000035)
   - [5.2 Confirming WN10-AC-000035 Remediation](#52-confirming-wn10-ac-000035-remediation)
 
-- [6. 🏁 **Lab Conclusion and Lessons Learned**](#6-lab-conclusion-and-lessons-learned)
+- [6.  **Lab Conclusion and Lessons Learned**](#6-lab-conclusion-and-lessons-learned)
   - [6.1 Conclusion](#61-conclusion)
   - [6.2 Lessons Learned](#62-lessons-learned)
 
 <a id="tools-used"></a>
-## 🧰 Tools Used
+##  Tools Used
 
 •	Tenable Vulnerability Management<br>
 •	Windows 10 Pro VM (Azure)<br>
@@ -33,14 +33,14 @@ In this lab, I will perform a compliance scan using Tenable's vulnerability mana
 •	Computer Management<br>
 
 <a id="1-configuring-compliance-scan"></a>
-## 🔧 1.	Configuring Compliance Scan
+##  1.	Configuring Compliance Scan
 
 <img src="https://imgur.com/oXILdFb.png">
 
 To set up the scan, I created a new Advanced Network Scan in Tenable and configured it to target the private IP address of my Windows 10 Pro VM. I selected the internal scanner and added valid Windows credentials to enable authenticated scanning. In the Compliance tab, I enabled policy compliance checks, and under the Plugins section, I activated the “Windows Compliance Checks” plugin. This setup allowed the scan to assess the system against established policy standards for configuration and security.
 
 <a id="2-analysing-scan-results"></a>
-## 📊 2.	Analysing Scan Results
+##  2.	Analysing Scan Results
 
 <img src="https://imgur.com/xB1gPwo.png">
 
@@ -57,7 +57,7 @@ For this lab, I focused on three compliance checks related to account and authen
 These settings are important for improving access control, and focusing on a smaller set allowed me to properly apply and test each change.
 
 <a id="3-security-control-wn10-cc-000280-overview"></a>
-## 🔒 3.	Security Control WN10-CC-000280 Overview
+##  3.	Security Control WN10-CC-000280 Overview
 
 <img src="https://imgur.com/ACqgXG2.png">
 
@@ -100,7 +100,7 @@ I opened the Group Policy Editor and navigated to the Remote Desktop Services se
 After running another compliance scan, I confirmed that WN10-CC-000280 has been successfully implemented and passed the check.
 
 <a id="4-security-control-wn10-00-000090-overview"></a>
-## 🔑 4. Security Control WN10-00-000090 Overview
+##  4. Security Control WN10-00-000090 Overview
 
 <img src="https://i.imgur.com/d1mLZN7.png">
 
@@ -146,7 +146,7 @@ Next, I verified that the 'Maximum password age' policy was already set to 42 da
 After running another compliance scan, I confirmed that WN10-00-000090 has been successfully implemented and passed the check.
 
 <a id="5-security-control-wn10-ac-000035-overview"></a>
-## 🔐 5. Security Control WN10-AC-000035 Overview
+##  5. Security Control WN10-AC-000035 Overview
 
 <img src="https://i.imgur.com/ma3T8bn.png">
 
