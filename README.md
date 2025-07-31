@@ -38,7 +38,7 @@ In this lab, I will perform a compliance scan using Tenable's vulnerability mana
 
 ## 1. Configuring Compliance Scan
 
-<img src="https://i.imgur.com/5tKKxfZ.png">
+<img src="https://imgur.com/oXILdFb.png">
 
 To set up the scan, I created a new Advanced Network Scan in Tenable and configured it to target the private IP address of my Windows 10 Pro VM. I selected the internal scanner and added valid Windows credentials to enable authenticated scanning. In the Compliance tab, I enabled policy compliance checks, and under the Plugins section, I activated the “Windows Compliance Checks” plugin. This setup allowed the scan to assess the system against established policy standards for configuration and security.
 
@@ -46,9 +46,9 @@ To set up the scan, I created a new Advanced Network Scan in Tenable and configu
 
 ## 2. Analysing Scan Results
 
-<img src="https://i.imgur.com/QlTOJYM.png">
+<img src="https://imgur.com/xB1gPwo.png">
 
-The scan returned a total of 148 failed checks, 15 warnings, and 99 passed items. Since this was a freshly spawned Windows 10 Pro VM on Azure, the high number of failed checks reflects the default configuration of a new Azure VM, which often lacks tailored security settings out of the box.
+The scan returned a total of 139 failed checks, 15 warnings, and 108 passed items. Since this was a freshly spawned Windows 10 Pro VM on Azure, the high number of failed checks reflects the default configuration of a new Azure VM, which often lacks tailored security settings out of the box.
 
 The failed checks covered a range of issues, including weak password policies, unconfigured account lockout settings, missing security patches, and permissive access controls. Notably, many failures were related to account and authentication settings, such as inadequate password length, lack of password expiration, and insecure Remote Desktop configurations.
 
@@ -64,7 +64,7 @@ These settings are important for improving access control, and focusing on a sma
 
 ## 3. Security Control WN10-CC-000280 Overview
 
-<img src="https://i.imgur.com/W0J7IB0.png">
+<img src="https://imgur.com/ACqgXG2.png">
 
 **What is WN10-CC-000280?**
 It’s a security rule that says: “Remote Desktop Services must always prompt a client for passwords upon connection.”
