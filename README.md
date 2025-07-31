@@ -188,7 +188,7 @@ I configured the Minimum password length policy via Local Group Policy Editor, s
 After running another compliance scan, I confirmed that WN10-AC-000035 has been successfully implemented and passed the check.
 
 <a id="6-lab-conclusion-and-lessons-learned"></a>
-## 🏁 6. Lab Conclusion and Lessons Learned
+##  6. Lab Conclusion and Lessons Learned
 
 <a id="61-conclusion"></a>
 ### 6.1 Conclusion
