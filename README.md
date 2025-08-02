@@ -1,4 +1,4 @@
-# Account & Authentication Hardenin
+# Account & Authentication Hardening
 
 In this lab, I will perform a compliance scan using Tenable's vulnerability management tool on a Windows 10 Pro virtual machine. The focus of this lab is on Account and Authentication Hardening. I’ll specifically look for settings and configurations related to user accounts, password policies, and authentication mechanisms that do not meet compliance standards. After identifying the non-compliant checks, I will apply the necessary remediations and re-run the scan to ensure the issues have been properly addressed.
 
