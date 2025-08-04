@@ -15,7 +15,7 @@ In this lab, I will perform a compliance scan using Tenable's vulnerability mana
   - [4.1 Remediating WN10-00-000090](#41-remediating-wn10-00-000090)
   - [4.2 Confirming WN10-00-000090 Remediation](#42-confirming-wn10-00-000090-remediation)
 
-- [5. ⚙ **Security Control WN10-AC-000035 Overview**](#5-security-control-wn10-ac-000035-overview)
+- [5. **Security Control WN10-AC-000035 Overview**](#5-security-control-wn10-ac-000035-overview)
   - [5.1 Remediating WN10-AC-000035](#51-remediating-wn10-ac-000035)
   - [5.2 Confirming WN10-AC-000035 Remediation](#52-confirming-wn10-ac-000035-remediation)
 
