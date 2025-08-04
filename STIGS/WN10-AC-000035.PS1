@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script creates a .inf template that sets MinimumPasswordLength = 14..
+    This PowerShell script creates a .inf template that sets MinimumPasswordLength = 14.
 
 .NOTES
     Author          : Opal Ratanayatigune
