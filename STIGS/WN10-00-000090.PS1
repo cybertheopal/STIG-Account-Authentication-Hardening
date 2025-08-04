@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    This PowerShell script uses Get-LocalUser to identify all enabled local user accounts, checks whether the "Password never expires" flag is set, and disables it by setting PasswordNeverExpires to false, ensuring that all local account passwords are required to expire.
 
 .NOTES
     Author          : Opal Ratanayatigune
